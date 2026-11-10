@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Makes the page scale correctly on phones -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Swapdesk | Phones and laptops, tested and ready</title>
+  <meta name="description" content="Buy, sell and swap tested phones and laptops.">
+  <!-- Google Fonts: Sora (headings) and Public Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600&family=Sora:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===== HEADER: logo + navigation ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="logo">Swap<span>desk</span></a>
+
+      <!-- Checkbox toggles the mobile menu without JavaScript -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="menu-button" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="nav" aria-label="Main">
+        <a href="#products">Shop</a>
+        <a href="#how">How it works</a>
+        <a href="#contact">Contact</a>
+        <a href="#products" class="btn btn-small">Swap a device</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Every phone and laptop is repaired, tested and ready.</h1>
+          <p>Buy a device with a 30-day warranty, or trade in your old one and pay only the difference.</p>
+          <a href="#products" class="btn">Browse devices</a>
+        </div>
+        <!-- Phone drawn with pure CSS, so no image file is needed -->
+        <div class="hero-art" aria-hidden="true">
+          <div class="phone"><div class="screen">Tested<br>12 / 12 checks</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PRODUCT SECTION ===== -->
+    <section class="products" id="products">
+      <div class="container">
+        <h2>Devices in stock this week</h2>
+        <p class="section-intro">Each one passes a 12-point check before it is listed.</p>
+
+        <!-- Grid: 1 column on phones, 2 on tablets, 4 on desktop (see styles.css) -->
+        <div class="grid">
+
+          <article class="card">
+            <img src="https://placehold.co/600x450/0B3C49/FFFFFF?text=Phone" alt="Refurbished smartphone" loading="lazy">
+            <div class="card-body">
+              <h3>iPhone 13, 128GB</h3>
+              <p>Battery health above 90%. Screen and camera tested.</p>
+              <a href="#contact" class="btn btn-full">Shop Now</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="https://placehold.co/600x450/12606B/FFFFFF?text=Android" alt="Android smartphone" loading="lazy">
+            <div class="card-body">
+              <h3>Galaxy S22, 256GB</h3>
+              <p>Unlocked for all networks, with a new charger.</p>
+              <a href="#contact" class="btn btn-full">Shop Now</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="https://placehold.co/600x450/1E293B/FFFFFF?text=Laptop" alt="Business laptop" loading="lazy">
+            <div class="card-body">
+              <h3>Dell Latitude 7420</h3>
+              <p>Core i5, 16GB RAM, 512GB SSD. Fresh Windows install.</p>
+              <a href="#contact" class="btn btn-full">Shop Now</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="https://placehold.co/600x450/334155/FFFFFF?text=Ultrabook" alt="Slim ultrabook" loading="lazy">
+            <div class="card-body">
+              <h3>MacBook Air M1</h3>
+              <p>8GB RAM, 256GB storage. Light wear on the lid only.</p>
+              <a href="#contact" class="btn btn-full">Shop Now</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== HOW IT WORKS (target for the nav link) ===== -->
+    <section class="how" id="how">
+      <div class="container">
+        <h2>Swap in three steps</h2>
+        <ol class="steps">
+          <li><strong>Tell us your device.</strong> Share the model and its condition.</li>
+          <li><strong>Get a trade-in value.</strong> We confirm the price after a quick test.</li>
+          <li><strong>Pick your upgrade.</strong> Pay the difference and collect it.</li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer" id="contact">
+    <div class="container footer-inner">
+      <div>
+        <a href="#top" class="logo">Swap<span>desk</span></a>
+        <p>Lagos, Nigeria</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>hello@swapdesk.example<br>+234 000 000 0000</p>
+      </div>
+      <div>
+        <h4>Opening hours</h4>
+        <p>Mon to Sat, 9am to 6pm</p>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2026 Swapdesk. Placeholder store for a design exercise.</p>
+  </footer>
+
+</body>
+</html>
